@@ -27,9 +27,8 @@ module.exports = {
     },
     "plugins": [
         "@typescript-eslint",
-        "import",
-        "promise",
-        "standard"
+        "prefer-arrow",
+        "import"
     ],
     "rules": {
         "@typescript-eslint/array-type": [
@@ -43,10 +42,10 @@ module.exports = {
         "@typescript-eslint/unbound-method": "off",
         "@typescript-eslint/dot-notation": "error",
         "@typescript-eslint/member-ordering": "off",
-        "@typescript-eslint/naming-convention": "error",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-parameter-properties": "off",
         "@typescript-eslint/no-unused-expressions": "error",
+        "@typescript-eslint/no-unused-vars": "warn",
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/prefer-for-of": "error",
         "@typescript-eslint/prefer-function-type": "error",
@@ -84,10 +83,6 @@ module.exports = {
         ],
         "id-match": "error",
         "import/order": "off",
-        "max-classes-per-file": [
-            "error",
-            1
-        ],
         "new-parens": "error",
         "no-bitwise": "error",
         "no-caller": "error",
@@ -130,7 +125,7 @@ module.exports = {
         "use-isnan": "error",
         "valid-typeof": "off",
         "@typescript-eslint/naming-convention": [
-            "error", 
+            "error",
             { "selector": "default", "format": ["camelCase", "UPPER_CASE", "PascalCase"] },
             { "selector": "variableLike", "format": ["camelCase", "UPPER_CASE", "PascalCase"], "leadingUnderscore": "allow" },
             { "selector": "memberLike", "format": ["camelCase", "UPPER_CASE"] },
@@ -174,6 +169,6 @@ module.exports = {
         ],
         "@typescript-eslint/no-misused-promises": "off",
         // TODO: either remove when legacy case has been fixed, or disable entirely if not desired
-        "max-classes-per-file":"warn",
+        "max-classes-per-file": "warn",
     }
 };

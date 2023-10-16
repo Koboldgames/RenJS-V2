@@ -6,13 +6,13 @@ const pixi = path.join(phaserModule, 'build/custom/pixi.js')
 const p2 = path.join(phaserModule, 'build/custom/p2.js')
 
 module.exports = {
-    target: "web",
+    target: 'web',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'renjs.js',
         library: 'RenJS',
-        libraryTarget: "var",
-        globalObject: "this"
+        libraryTarget: 'var',
+        globalObject: 'this'
     },
     module: {
         rules: [
