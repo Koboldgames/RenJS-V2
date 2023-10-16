@@ -1,4 +1,4 @@
-declare type Token = {
+type Token = {
     text: string;
     tag?: never;
 } | {

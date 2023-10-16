@@ -1,9 +1,9 @@
 import RJSManagerInterface from './RJSManager';
 import RJS from '../core/RJS';
-export declare type CurrentAudio = {
+export type CurrentAudio = {
     [key: string]: Phaser.Sound | null;
 };
-export declare type ActiveAudio = {
+export type ActiveAudio = {
     [key: string]: {
         key: string;
         looped: boolean;

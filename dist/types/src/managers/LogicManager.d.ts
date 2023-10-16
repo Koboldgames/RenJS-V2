@@ -1,7 +1,7 @@
 import { Group } from 'phaser-ce';
 import RJS from '../core/RJS';
 import RJSManagerInterface from './RJSManager';
-declare type Choice = {
+type Choice = {
     index: any;
     actions: any[];
     available: boolean;
